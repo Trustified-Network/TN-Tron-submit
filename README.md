@@ -16,6 +16,8 @@ Trustified.network is a smart contract assured Escrow Agreement and Payment plat
 
 # Tronbox  
 
+https://github.com/Trustified-Network/TN-Tron-submit/blob/master/tronbox.js
+
 
 ```javascript
 
