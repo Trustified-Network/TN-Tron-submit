@@ -48,8 +48,8 @@ module.exports = {
             privateKey: privateKey,
             consume_user_resource_percent: 30,
             fee_limit: 100000000,
-            fullNode: "https://api.shasta.trongrid.io",
-            solidityNode: "https://api.shasta.trongrid.io", 
+            fullNode: "https://api.trongrid.io",
+            solidityNode: "https://api.trongrid.io", 
             network_id: "*"
         },
     },
