@@ -14,6 +14,76 @@ Trustified.network is a smart contract assured Escrow Agreement and Payment plat
 3) Send/Receive crypto payments in a reliable and secure way without paying hefty commissions to third parties. 
 
 
+# Tronbox  
+
+
+```javascript
+
+require("dotenv").config({ path: "./.env" });
+
+const privateKey = process.env.REACT_APP_PRIVATE_KEY;
+const address = process.env.REACT_APP_ADDRESS;
+const address2 = process.env.REACT_APP_ADDRESS2;
+
+module.exports = {
+    networks: {
+        compilers: {
+            solc: {
+                version: '0.8.0'
+            }
+        },
+        development: {
+            from: address,
+            privateKey: privateKey,
+            consume_user_resource_percent: 30,
+            fee_limit: 100000000,
+            fullNode: "https://api.shasta.trongrid.io",
+            solidityNode: "https://api.shasta.trongrid.io", 
+            network_id: "*"
+        },
+        production: {
+            from: address2,
+            privateKey: privateKey,
+            consume_user_resource_percent: 30,
+            fee_limit: 100000000,
+            fullNode: "https://api.shasta.trongrid.io",
+            solidityNode: "https://api.shasta.trongrid.io", 
+            network_id: "*"
+        },
+    },
+    solc: {
+        optimizer: {
+            enabled: false,
+            runs: 200
+        },
+    }
+};
+
+```
+
+# TRON Network
+
+```javascript
+
+const TRON = {
+    chainId: "0xC383",
+    chainName: "shasta",
+    rpcUrls: ["https://api.shasta.trongrid.io/jsonrpc"],
+    nativeCurrency: {
+        name: "shasta",
+        symbol: "TRX",
+        decimals: 16,
+    },
+    blockExplorerUrls: ["https://shasta.tronscan.org"],
+} 
+export { TRON };  
+
+```
+
+# Contract Address => TWu3fad53z8RAqbQvsRndDvQYfPJhipp8L
+
+
+
 # Homepage 
 ![Screenshot 2022-07-20 at 11 10 06 AM](https://user-images.githubusercontent.com/3678906/179905712-93c2ce0d-0a93-46bf-9802-295eb72add71.png)
 
