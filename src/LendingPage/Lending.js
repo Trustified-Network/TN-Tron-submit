@@ -21,6 +21,7 @@ import ProductRoot from "./ProductRoot";
 import InvoicingRoot from "./InvoicingRoot";
 import AnalyticsRoot from "./AnalyticsRoot";
 import {toast} from 'react-toastify';
+import Chip from '@mui/material/Chip';
 
 import Slider from "./Slider";
 import { Web3ModalContext } from "src/context/Web3Modal";
@@ -98,6 +99,9 @@ return (
     <div className="container-fluid p-5">
       <div className="row">
         <div className="col-10 mx-auto text-center mt-5">
+          <h4>
+          <Chip label="Please select TRON Shasta Testnet in your TRON wallet" color="primary" />
+          </h4>
           <p className="peragraph">Sell Digital Services Globally.</p>
           <p className="peragraph">
             Accept Crypto Payments without paying Hefty Commissions.
